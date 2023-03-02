@@ -130,7 +130,7 @@ class TimeToWordConvert implements TimeToWordConvertingInterface
             $next_hour = ($hours + 1 > 12) ? 1 : $hours + 1;
             $res = "$min_dic[$minutes] $after_dic[$next_hour]";
         }
-        $res_time = "$time $res.";
+        $res_time = "$time - $res.";
         return $res_time;
     }
 }
